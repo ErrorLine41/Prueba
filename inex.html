@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🌍 Agencia de Viajes</h1>
+    <h2>Reserva de Vuelos y Paquetes Turísticos</h2>
+
+
+    <section>
+        <h3>✈️ Buscar Vuelos</h3>
+        <form id="formVuelos">
+            <label>Origen: <input type="text" id="origen" required></label><br><br>
+            <label>Destino: <input type="text" id="destino" required></label><br><br>
+            <label>Fecha Ida: <input type="date" id="fechaIda" required></label><br><br>
+            <label>Fecha Vuelta: <input type="date" id="fechaVuelta" required></label><br><br>
+            <button type="submit">Buscar Vuelos</button>
+        </form>
+        <p id="resultadoVuelos"></p>
+    </section>
+
+    <hr>
+
+
+    <section>
+        <h3>🧳 Buscar Paquetes Turísticos</h3>
+        <form id="formPaquetes">
+            <label>Destino: <input type="text" id="destinoPaquete" required></label><br><br>
+            <label>Días: <input type="number" id="dias" required></label><br><br>
+            <button type="submit">Buscar Paquetes</button>
+        </form>
+        <p id="resultadoPaquetes"></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
